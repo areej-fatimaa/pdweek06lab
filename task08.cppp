@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+string point(int coordx, int coordy, int size);
+main()
+{
+ int coordx;
+ int coordy;
+ int size;
+ string result;
+ cout<<"enter coordx";
+ cin>>coordx;
+ cout<<"enter coody";
+ cin>>coordy;
+ cout<<"enter value of h";
+ cin<<size;
+ result=string point(coordx, coordy, size);
+}
+string point(int coordx, int coordy, int size)
+{ 
+    if(coordx<0||coordx<3*size||coordy<0||coordy>=4*size)
+    {
+        str="outside";
+    }
+    else if(coorx>=0||coordx<=3*size&&coordy>=0&&coordy<=4*size)
+    {
+      str="inside";   
+    }
+    else
+    {
+        str="border";
+    }
+    return str;
+}
